@@ -1,0 +1,187 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* LOREM IPSUM DOLOR ASMET */
+/* GAME SUWIT JAWA V2.0 */
+body{
+    background-image: url('GAME SUWIT JAWA 2.0 (DOM)/IMG/bg.png');
+    /* background-size: cover;  */
+    background-position: center center; 
+    -repeat: no-repeat;
+}
+h1{
+    font-family: helvetica, arial;
+    text-align: center;
+    font-size: 90px;
+    animation: kimak 300ms ease-in-out infinite;
+}
+.komputer-area{
+    transition: .4s;
+    margin: 40px auto;
+    width: 50%;
+    height: 200px;
+    position: relative;
+    background-color: rgb(255, 0, 0);
+    border: 1px solid black;
+}
+.komputer-area img{
+    position: absolute;
+    left: 40%;
+    margin-top: 40px;
+    width: 120px;
+    height: 120px;
+    transition: 700ms;
+    display: none;
+}
+.info-area{
+    position: absolute;
+    left: 43%;
+    margin: -58px auto;
+    width: 13%;
+    height: 40px;
+    background-color: chocolate;
+    text-align: center;
+    padding: 7px 0;
+    box-sizing: border-box;
+    font-size: 25px;
+    border-radius: 5px;
+    border: 2px dotted black;
+    font-family: helvetica;
+}
+.human-area{
+    margin: -40px auto;
+    width: 50%;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid black;
+}
+.parrent-human{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+.parrent-human img{
+    border-radius: 50%;
+    margin: -55px 20px;
+}
+.gajah-label,.semut-label,.orang-label{
+    font-family: Helvetica, sans-serif;
+    color: black;
+    position: absolute;
+}
+.gajah-label{
+    top: 508px;
+    left: 36%;
+    padding-left: 5px;
+}
+.semut-label{
+    top: 508px;
+    left: 48%;
+}
+.orang-label{
+    top: 508px;
+    left: 60%;
+}
+.gajah:hover .gajah-label{
+    display: none;
+    color: aqua;
+}
+.gajah,.semut,.orang{
+    margin-top: -60px;
+    width: 120px;
+    height: 120px;
+    transition: .4s;
+    cursor: pointer;
+    position: relative;
+}
+.gajah:hover,.semut:hover,.orang:hover{
+    transition: .4s;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 1px rgba(81, 81, 255,.9);
+}
+.gajah:active,.semut:active,.orang:active{
+    top: 2px;
+    cursor: wait;
+}
+#btn-mulai{
+    position: absolute;
+    width: 75px;
+    height: 25px;
+    top: 321px;
+    left: 31%;
+}
+#btn-reset{
+    position: absolute;
+    width: 75px;
+    height: 25px;
+    top: 321px;
+    left: 63%;
+}
+
+@keyframes kimak {
+    0%{
+        color: red;
+    }10%{
+        color: rgb(163, 1, 1);
+    }20%{
+        color: green;
+    }30%{
+        color: greenyellow;
+    }40%{
+        color: rgb(0, 0, 119);
+    }50%{
+        color: rgb(0, 0, 255);
+    }60%{
+        color: rgb(81, 81, 255);
+    }70%{
+        color: rgb(255, 255, 124);
+    }80%{
+        color: yellow;
+    }90%{
+        color: rgb(161, 161, 0);
+    }100%{
+        color: rgb(255, 92, 92);
+    }
+}
